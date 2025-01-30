@@ -16,7 +16,7 @@ export default function SectionOne() {
               <label>Потвердите пароль</label>
               <input type="text" />
             </div>
-            <Link to={'/'} style={{textDecoration: 'none'}} className="code-family__parent-block-item-child-columnLogin">
+            <Link to={'/home'} style={{textDecoration: 'none'}} className="code-family__parent-block-item-child-columnLogin">
               <button style={{marginTop: '35px'}}>Подтвердить</button>
             </Link>
           </div>

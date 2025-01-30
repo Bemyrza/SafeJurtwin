@@ -33,7 +33,7 @@ export default function Header() {
         <div>
             <header className={classes.header}>
                 <div className={classes.header__logo}>
-                    <Link to="/">
+                    <Link to="/home">
                         <img src={safeLogo} alt="Logo" />
                     </Link>
                 </div>

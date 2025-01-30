@@ -34,13 +34,13 @@ import '../app/app.scss';
                 <Route path="/schedule" element={<Schedule />} />
 
                 <Route path="/Footer" element={<Footer />} />
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
 
                 <Route path="/codeFamily" element={<CodeFamily />} />
                 <Route path="/create-account" element={<CreateAccount />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/connection-family" element={<ConnectionFamily />} />
-                <Route path="/role-choice" element={<RoleChoice />} />
+                <Route path="/" element={<RoleChoice />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
         </>

@@ -21,7 +21,7 @@ export default function SectionOne() {
             </div>
             <div className="login__parent-block-item-child-columnLogin">
             <Link to={'/forgot-password'} href="#">Забыли пароль?</Link>
-              <Link to={'/'} style={{textDecoration: 'none', color: 'white'}} className="login__parent-block-item-child-columnLogin-complete">Продолжить</Link>
+              <Link to={'/home'} style={{textDecoration: 'none', color: 'white'}} className="login__parent-block-item-child-columnLogin-complete">Продолжить</Link>
               {/* <button className="login__parent-block-item-child-columnLogin-login">Зарегистрироваться</button> */}
             </div>
           </div>
