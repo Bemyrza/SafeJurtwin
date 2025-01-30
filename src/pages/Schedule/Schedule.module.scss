@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 45%;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom, #07a6c9, #004e63);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Andika', sans-serif;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        font-family: 'Andika', sans-serif;
+
+    }
+
+    .button {
+        align-items: center;
+        justify-content: center;
+        width: 480px;
+        height: 90px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: #07A6C9;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Andika', sans-serif;
+        transition: background-color 0.3s;
+        margin-left: 14%;
+
+
+        &:hover {
+            background-color: #006080;
+            color: #fff;
+        }
+    }
+
+    .requestButton {
+        width: 480px;
+        height: 90px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: #07A6C9;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        margin-left: 14%;
+        font-family: 'Andika', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            color: #fff;
+            background-color: #006080;
+        }
+    }
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    font-family: 'Andika', sans-serif;
+
+
+    h1 {
+        font-size: 2rem;
+        color: #004e63;
+        margin-bottom: 2rem;
+    }
+
+    .scheduleGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .scheduleItem {
+        background-color: #eaeaea;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            font-size: 1.2rem;
+            color: #004e63;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #333;
+        }
+    }
+}
