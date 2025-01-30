@@ -1,95 +1,311 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Galada&family=Geist+Mono:wght@100..900&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family: "Montserrat", serif;
-}
-.header {
-    margin-right: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    
-}
-
-.header__logo img {
-    margin-left: 150px;
-    width: 80px;
-    height: 80px;
-}
-
-.header__nav {
-    flex-grow: 1;
-    margin-left: 2rem;
-}
-
-.header__nav .menu {
-    list-style: none;
-    display: flex;
-    gap: 10rem;
-    padding: 0;
-    margin-left: 20%;
-}
-
-.header__nav .menu .menu__item .menu__link {
-    text-decoration: none;
-    color: #111;
-    font-size: 1rem;
-    font-weight: 500    ;
-    transition: color 0.3s;
-    
-}
-
-.header__nav .menu .menu .menu__item .menu__link:hover {
-    color: #00bcd4;
-}
-
-.header__profile img {
-    width: 80px;
-    height: 40px;
-    cursor: pointer;
-    object-fit: contain;
-    transition: transform 0.3s;
-}
-h3{
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-}
-.header__profile img:hover {
-    transform: scale(1.1);
-}
-.header__profile{
-    display: flex;
-   
-}
-
-li {
-    font-family: "Fredoka", serif;
-}
-
-@media (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Galada&family=Geist+Mono:wght@100..900&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        font-family: "Montserrat", serif;
+    }
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        margin-right: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        
+    }
+
+    .header__logo img {
+        margin-left: 150px;
+        width: 80px;
+        height: 80px;
     }
 
     .header__nav {
-        margin-left: 0;
-        margin-top: 1rem;
+        flex-grow: 1;
+        margin-left: 2rem;
     }
 
     .header__nav .menu {
-        flex-direction: column;
-        gap: 1rem;
+        list-style: none;
+        display: flex;
+        gap: 10rem;
+        padding: 0;
+        margin-left: 20%;
     }
 
-    nav{
+    .header__nav .menu .menu__item .menu__link {
+        text-decoration: none;
+        color: #111;
+        font-size: 1rem;
+        font-weight: 500    ;
+        transition: color 0.3s;
+        
+    }
+
+    .header__nav .menu .menu .menu__item .menu__link:hover {
+        color: #00bcd4;
+    }
+
+    .header__profile img {
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        object-fit: contain;
+        transition: transform 0.3s;
+    }
+    h3{
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .header__profile img:hover {
+        transform: scale(1.1);
+    }
+    .header__profile{
+        display: flex;
+    
+    }
+
+    li {
+        font-family: "Fredoka", serif;
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header__nav {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+
+        .header__nav .menu {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        nav{
+            display: none;
+            flex-direction: row;
+        }
+    }
+
+
+    .Jurt{
+        margin-right: 30px;
+    }
+    .header {
+        margin-right: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        position: relative;
+    }
+    
+    .header__logo img {
+        margin-left: 150px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .header__nav {
+        flex-grow: 1;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10rem;
+        padding: 0;
+        margin-left: -2%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .header__nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 10rem;
+        padding: 0;
+        margin-left: 20%;
+    }
+    
+    .header__nav .menu .menu__item .menu__link {
+        text-decoration: none;
+        color: #111;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .header__nav .menu .menu .menu__item .menu__link:hover {
+        color: #00bcd4;
+    }
+    
+    .header__profile img {
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        object-fit: contain;
+        transition: transform 0.3s;
+    }
+    
+    .header__profile img:hover {
+        transform: scale(1.1);
+    }
+    
+    .header__profile {
+        display: flex;
+    }
+    
+    li {
+        font-family: "Fredoka", serif;
+    }
+    
+    .header__burger {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        padding: 5px;
     }
-}
+    
+    .burgerIcon {
+        background-color: white;
+        height: 4px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .header__nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+    
+        .header__nav .menu {
+            display: none;
+        }
+    
+        .header__nav.open .menu {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .header__burger {
+            display: flex;
+        }
+    
+        .header__burger.open .burgerIcon:nth-child(1) {
+            transform: rotate(45deg);
+            position: relative;
+            top: 10px;
+        }
+    
+        .header__burger.open .burgerIcon:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .header__burger.open .burgerIcon:nth-child(3) {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -10px;
+        }
+    }
+    
+   
+    
+ 
+    
+    @media (max-width: 400px) {
+        .header__nav {
+            display: none;
+        }
+    
+        .burgerMenu {
+            display: block;
+        }
+    
+        .menu.active {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #333;
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    
+/* Default: Sidebar is hidden */
+/* Button to open the sidebar */
+.menuButton {
+    display: none; /* Initially hidden on larger screens */
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Position the button on the right side */
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    position: fixed;       /* Position the button fixed on the screen */
+    right: 10px;           /* Align the button to the right */
+    cursor: pointer;
+  }
+  
+  /* Show the button only on mobile screens with width 400px or less */
+  @media (max-width: 400px) {
+    .menuButton {
+      display: block; /* Show the button on small screens */
+    }
+  
+    /* Sidebar styles */
+    .sidebar {
+      display: block; /* Show the sidebar on small screens */
+      position: fixed;
+      top: 0;
+      right: 0; /* Position the sidebar on the right side */
+      width: 250px; /* Adjust sidebar width as needed */
+      height: 100%;
+      background-color: #fff; /* Adjust the background color */
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for the right side */
+      z-index: 999; /* Ensure the sidebar is on top */
+      padding: 20px;
+    }
+  
+    /* Nav inside sidebar */
+    .sidebarNav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .sidebarNav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .sidebarNav li {
+      margin-bottom: 15px;
+    }
+  
+    .sidebarNav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .sidebarNav a:hover {
+      color: #17accc; /* Add a hover effect */
+    }
+  }
+  
 
-
-.Jurt{
-    margin-right: 30px;
-}
