@@ -162,3 +162,196 @@
     }
   }
 }
+.create-account__parent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping of child elements on smaller screens */
+}
+
+.create-account__parent-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Make it 100% wide on mobile */
+  padding: 10px; /* Add padding on mobile */
+}
+
+.create-account__parent-block-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make it full width on mobile */
+  margin: 20px 0;
+  margin-left: 0;
+}
+
+.create-account__parent-block-item h1 {
+  font-size: 30px; /* Adjust font size for smaller screens */
+}
+
+.create-account__parent-block-item-childOne {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.create-account__parent-block-item-childOne h4 {
+  font-size: 16px; /* Adjust font size for mobile */
+}
+
+.create-account__parent-block-item-childOne a {
+  font-size: 18px; /* Adjust font size */
+  margin-top: 10px;
+}
+
+.create-account__parent-block-item-child {
+  display: flex;
+  flex-direction: column; /* Stack input fields vertically */
+}
+
+.create-account__parent-block-item-child-column {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%; /* Full width for input fields */
+}
+
+.create-account__parent-block-item-child-column input {
+  width: 100%; /* Make inputs full width */
+  height: 45px; /* Adjust height for mobile */
+}
+
+.create-account__parent-block-item-child-columnReal input {
+  width: 100%; /* Make inputs full width */
+  height: 45px; /* Adjust height for mobile */
+}
+
+.create-account__parent-block-item-child-columnConfirm {
+  display: flex;
+  flex-direction: column; /* Stack radio button and text vertically */
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.create-account__parent-block-item-child-columnConfirm input[type="radio"] {
+  width: 20px; /* Adjust size */
+  height: 20px;
+}
+
+.create-account__parent-block-item-child-columnConfirm p {
+  font-size: 14px; /* Adjust font size */
+}
+
+.create-account__parent-block-item-child-columnLogin {
+  margin-top: 20px;
+  width: 100%; /* Full width for button */
+}
+
+.create-account__parent-block-item-child-columnLogin button {
+  width: 100%; /* Full width */
+  height: 50px; /* Adjust height */
+  font-size: 20px; /* Adjust font size */
+}
+
+@media (max-width: 768px) {
+  .create-account__parent-block-itemTwo {
+    display: none; /* Hide the second block with the image */
+  }
+  .create-account__parent {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .create-account__parent-block {
+    flex-direction: column; /* Stack blocks vertically */
+  }
+
+  .create-account__parent-block-item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .create-account__parent-block-item-child {
+    width: 100%;
+  }
+
+  .create-account__parent-block-item-child-columnReal input,
+  .create-account__parent-block-item-child-column input {
+    width: 100%; /* Ensure inputs are full width on mobile */
+  }
+  @media (max-width: 480px) {
+    .create-account__parent-block-itemTwo {
+      display: none; /* Hide the second block with the image */
+    }
+    .create-account__parent-block-item h1 {
+      font-size: 24px; /* Adjust font size for small screens */
+    }
+  
+    .create-account__parent-block-item-childOne h4,
+    .create-account__parent-block-item-childOne a {
+      font-size: 14px; /* Adjust font size for small screens */
+    }
+  
+    .create-account__parent-block-item-child-columnReal input,
+    .create-account__parent-block-item-child-column input {
+      font-size: 18px; /* Adjust input font size */
+    }
+  
+    .create-account__parent-block-item-child-columnConfirm p {
+      font-size: 12px; /* Adjust text size for better readability */
+    }
+  
+    .create-account__parent-block-item-child-columnLogin button {
+      font-size: 18px; /* Adjust button font size */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .create-account__parent-block-itemTwo {
+      display: none; /* Hide the second block with the image */
+    }
+    .create-account__parent-block-item h1 {
+      font-size: 20px; /* Smaller font size for very small screens */
+    }
+  
+    .create-account__parent-block-item-childOne h4,
+    .create-account__parent-block-item-childOne a {
+      font-size: 12px; /* Further reduce font size */
+    }
+  
+    .create-account__parent-block-item-child-columnReal input,
+    .create-account__parent-block-item-child-column input {
+      max-width: 360px;
+      width: 100%;
+      font-size: 16px; /* Adjust input font size for small screens */
+    }
+  
+    .create-account__parent-block-item-child-columnConfirm p {
+      font-size: 10px; /* Adjust text size to fit the screen */
+    }
+  
+    .create-account__parent-block-item-child-columnLogin button {
+      font-size: 16px; /* Smaller button font size */
+    }
+  
+    .create-account__parent-block-item-childOne a {
+      font-size: 12px; /* Reduce link font size */
+    }
+  
+    .create-account__parent-block-item-child-column input {
+      max-width: 360px;
+      width: 100%;
+      font-size: 16px;/* Adjust input height */
+    }
+  
+    .create-account__parent-block-item-child-columnReal input {
+      height: 40px; /* Adjust input height */
+    }
+  
+    .create-account__parent-block-item-child-columnLogin button {
+      max-width: 360px;
+      width: 100%;
+      font-size: 16px;
+      height: 45px; /* Adjust button height */
+    }
+  }
+}

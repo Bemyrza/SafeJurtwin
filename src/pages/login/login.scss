@@ -157,3 +157,94 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .login__parent-block-item {
+    width: 80vw; /* Reduce width for smaller screens */
+    margin-left: 20px; /* Adjust the margin */
+  }
+
+  .login__parent-block-item h1 {
+    font-size: 30px; /* Adjust heading font size */
+    text-align: center; /* Center align the heading */
+  }
+
+  .login__parent-block-item-childOne {
+    width: 100%; /* Ensure the description takes full width */
+    margin: 20px 0;
+    h4 {
+      font-size: 16px; /* Reduce font size of the description */
+      text-align: center; /* Center the description */
+      color: #bbbbbb; /* Ensure it’s still readable */
+    }
+  }
+
+  .login__parent-block-item-child {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 15px; /* Add space between fields */
+  }
+
+  .login__parent-block-item-child-column input {
+    width: 100%; /* Inputs take full width */
+    font-size: 16px; /* Adjust font size for inputs */
+    margin-left: 38px;
+  }
+
+  .login__parent-block-item-child-columnReal {
+    width: 100%; /* Full width for the email and password fields */
+    margin-top: 10px;
+  }
+
+  .login__parent-block-item-child-columnLogin a {
+    font-size: 16px; /* Adjust link font size */
+    text-align: center; /* Center-align the link */
+  }
+
+  .login__parent-block-item-child-columnLogin-complete {
+    width: 100%; /* Full width for the button */
+    font-size: 18px; /* Reduce button font size */
+    height: 50px; /* Adjust button height */
+  }
+
+  .login__parent-block-itemTwo {
+    display: none; /* Hide the background image block on small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .login__parent-block-item-child-column input, .login__parent-block-item-child-columnReal input {
+    font-size: 16px;
+    height: 50px;
+    margin-left: 38px;
+}
+
+  .login__parent-block-item {
+    width: 90vw; /* Further reduce width for very small screens */
+    margin-left: 10px;
+  }
+
+  .login__parent-block-item h1 {
+    font-size: 24px; /* Smaller font size for the heading */
+    text-align: center; /* Center the heading */
+  }
+
+  .login__parent-block-item-childOne h4 {
+    font-size: 14px; /* Reduce the font size for description */
+  }
+
+  .login__parent-block-item-child-column input {
+    font-size: 14px; /* Smaller font size for inputs */
+    margin-left: 38px;
+  }
+
+  .login__parent-block-item-child-columnLogin-complete {
+    font-size: 16px; /* Even smaller font size for the button */
+    height: 45px; /* Smaller button height */
+  }
+
+  .login__parent-block-item-child-columnLogin a {
+    font-size: 14px; /* Smaller font size for links */
+    margin-left: 38px;
+  }
+}

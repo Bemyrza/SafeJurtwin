@@ -135,3 +135,94 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .connection-family__parent-block-item {
+    width: 80vw; /* Reduce width for smaller screens */
+    margin-left: 20px; /* Adjust the margin */
+  }
+
+  .connection-family__parent-block-item h1 {
+    font-size: 30px; /* Adjust heading font size */
+    text-align: center; /* Center align the heading */
+  }
+
+  .connection-family__parent-block-item-childOne {
+    width: 100%; /* Make sure content takes full width */
+    margin: 20px 0;
+    h4 {
+      font-size: 16px; /* Reduce font size of the description */
+      text-align: center; /* Center the description */
+      max-width: 100%;
+    }
+  }
+
+  .connection-family__parent-block-item-child {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Add space between the inputs */
+  }
+
+  .connection-family__parent-block-item-child-column input {
+    width: 100%; /* Inputs take full width */
+    font-size: 16px; /* Adjust font size for inputs */
+  }
+
+  .connection-family__parent-block-item-childContent {
+    flex-direction: column; /* Stack child elements vertically */
+  }
+
+  .connection-family__parent-block-item-child-columnReal {
+    width: 100%; /* Full width for the code input */
+    margin-top: 10px;
+  }
+
+  .connection-family__parent-block-item-child-columnLogin button {
+    width: 100%; /* Make the button full width */
+    font-size: 18px; /* Reduce button font size */
+    height: 50px; /* Adjust button height */
+  }
+
+  .connection-family__parent-block-item-child-column input {
+    width: 100%; /* Ensure input fields fill the width */
+  }
+
+  .connection-family__parent-block-itemTwo {
+    display: none; /* Hide the image background on small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .connection-family__parent-block-item-child-columnReal input {
+    width: 100%;
+    height: 60px;
+    background-color: #ececec;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+  .connection-family__parent-block-item {
+    width: 90vw; /* Further reduce width for very small screens */
+    margin-left: 10px;
+  }
+
+  .connection-family__parent-block-item h1 {
+    font-size: 24px; /* Smaller font size for the heading */
+    text-align: center; /* Centered heading */
+  }
+
+  .connection-family__parent-block-item-childOne h4 {
+    font-size: 14px; /* Reduce the font size for description */
+  }
+
+  .connection-family__parent-block-item-child-column input {
+    
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .connection-family__parent-block-item-child-columnLogin button {
+    font-size: 16px; /* Even smaller font size for the button */
+    height: 45px; /* Smaller button height */
+  }
+}

@@ -164,3 +164,80 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .code-family__parent-block-item {
+    width: 80vw; /* Make the block take more width on smaller screens */
+    margin-left: 20px; /* Adjust left margin */
+  }
+
+  .code-family__parent-block-item h1 {
+    font-size: 30px; /* Decrease the font size for the title */
+    text-align: center; /* Center the heading */
+  }
+
+  .code-family__parent-block-item-child-columnReal input {
+    width: 100%; /* Make the input fields take full width */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .code-family__parent-block-item-child-columnReal label {
+    font-size: 16px; /* Adjust label size */
+  }
+
+  .code-family__parent-block-item-child-columnLogin button {
+    width: 100%; /* Button takes full width */
+    font-size: 18px; /* Smaller font size for the button */
+    height: 50px; /* Adjust height */
+  }
+
+  .code-family__parent-block-item-childContent {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  .code-family__parent-block-item-child-column {
+    width: 100%; /* Make the input columns 100% width */
+    gap: 10px; /* Add some space between input fields */
+  }
+
+  .code-family__parent-block-item-childOne {
+    display: none; /* Hide this block for smaller screens */
+  }
+
+  .code-family__parent-block-itemTwo {
+    display: none; /* Hide the background block with the image */
+  }
+}
+
+@media (max-width: 400px) {
+  .code-family__parent-block-item {
+    width: 90vw; /* Further decrease the width for very small screens */
+    margin-left: 10px; /* Adjust left margin */
+  }
+
+  .code-family__parent-block-item h1 {
+    font-size: 24px; /* Even smaller font size */
+    text-align: center; /* Ensure title is centered */
+  }
+
+  .code-family__parent-block-item-child-columnReal input {
+    font-size: 14px; /* Even smaller font size for input fields */
+  }
+
+  .code-family__parent-block-item-child-columnReal label {
+    font-size: 14px; /* Adjust label size */
+  }
+
+  .code-family__parent-block-item-child-columnLogin button {
+    font-size: 16px; /* Smaller font size for the button */
+    height: 45px; /* Adjust button height */
+  }
+
+  .code-family__parent-block-item-childContent {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  .code-family__parent-block-item-child-column {
+    width: 100%; /* Make the input columns 100% width */
+    gap: 8px; /* Reduce space between inputs */
+  }
+}

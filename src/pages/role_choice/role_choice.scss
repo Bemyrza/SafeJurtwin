@@ -61,3 +61,102 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .role__choice-parent-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role__choice-parent-block-blocks {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .login__parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login__parent-block-item {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .login__parent-block-item h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .login__parent-block-item-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login__parent-block-item-child-column,
+  .login__parent-block-item-child-columnReal,
+  .login__parent-block-item-child-columnLogin {
+    width: 100%;
+    align-items: center;
+  }
+
+  .login__parent-block-item-child-column input,
+  .login__parent-block-item-child-columnReal input {
+    width: 100%;
+  }
+
+  .login__parent-block-item-child-columnLogin-complete,
+  .login__parent-block-item-child-columnLogin-login {
+    width: 100%;
+  }
+
+  .login__parent-block-itemTwo {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .role__choice-parent-block-blocks {
+    width: 100%;
+    padding: 10px;
+    height: 372px;
+  }
+  .role__choice-parent-block-blocks p {
+    font-family: Andika;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    max-width: 80%;
+}
+.role__choice-parent-block-blocks h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+}
+  .login__parent-block-item h1 {
+    font-size: 10px;
+    line-height: 40px;
+  }
+
+  .login__parent-block-item-child-column input,
+  .login__parent-block-item-child-columnReal input {
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .login__parent-block-item-child-columnLogin-complete,
+  .login__parent-block-item-child-columnLogin-login {
+    font-size: 20px;
+    height: 50px;
+  }
+}
