@@ -8,12 +8,12 @@ export default function Header() {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
 
-    // Toggle the sidebar open/close
+    
     const toggleSidebar = () => {
         setSidebarOpen(!isSidebarOpen);
     };
 
-    // Close the sidebar if clicked outside
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -23,7 +23,7 @@ export default function Header() {
 
         document.addEventListener('mousedown', handleClickOutside);
 
-        // Clean up the event listener
+      
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };

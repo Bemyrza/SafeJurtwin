@@ -1,7 +1,5 @@
 .section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .service {
@@ -12,8 +10,8 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        flex-wrap: wrap;
         align-items: center;
-        width: 100%;
     }
 
     .service__block {
@@ -54,16 +52,8 @@
         }
 
         @media (max-width: 768px) {
-            width: 80%;
-            height: 200px;
-            padding: 1rem;
-            font-size: 1rem;
-            left: 0; /* Center the block on smaller screens */
-        }
-
-        @media (max-width: 480px) {
-            width: 300px;
-            height: 180px;
+            width: 364px;
+            left: 0
         }
     }
 }
@@ -71,11 +61,6 @@
 .imagesContainer {
     position: relative;
     left: 21%;
-
-    @media (max-width: 768px) {
-        left: 0;
-        text-align: center;
-    }
 }
 
 .backtage {
@@ -83,16 +68,6 @@
     height: 740px;
     border-radius: 10px;
     display: block;
-
-    @media (max-width: 768px) {
-        width: 100%;
-        height: 400px;
-    }
-
-    @media (max-width: 480px) {
-        width: 100%;
-        height: 350px;
-    }
 }
 
 .backicon {
@@ -102,22 +77,59 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @media (max-width: 768px) {
-        width: 250px;
-        height: 300px;
-    }
-
-    @media (max-width: 480px) {
-        width: 200px;
-        height: 250px;
-    }
 }
 
-.footer {
+.footer{
     margin-top: 10%;
+}
+@media (max-width: 400px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
 
-    @media (max-width: 768px) {
+    .service {
+        padding: 1rem;
+    }
+
+    .service__block {
+        width: 280px;
+        height: 180px;
+        left: 0;
+        padding: 1rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .imagesContainer {
+        left: 0;
+        text-align: center;
+    }
+
+    .backtage {
+        display: none; // Скрываем большое фото
+    }
+    .backicon{
+        display: none;
+    }
+
+    .backicon {
+        width: 200px;
+        height: 220px;
+    }
+
+    .footer {
         margin-top: 5%;
     }
 }

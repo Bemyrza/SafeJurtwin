@@ -1,12 +1,12 @@
 .container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;  /* Минимальная высота - вся высота экрана */
+    height: 100vh;
     background-color: #f5f5f5;
 }
+
 .sidebar {
-    width: 100%;  /* Full width for mobile */
-    padding: 1rem;  /* Adjust padding for mobile */
+    width: 45%;
+    padding: 2rem;
     background-image: linear-gradient(to bottom, #07a6c9, #004e63);
     color: #fff;
     display: flex;
@@ -16,14 +16,17 @@
 
     h2 {
         text-align: center;
-        font-size: 1.8rem;  /* Smaller font size for mobile */
+        font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom: 1rem;  /* Reduced margin */
+        margin-bottom: 2rem;
     }
 
-    .button, .requestButton {
-        width: 100%;  /* Full width for buttons on mobile */
-        height: 60px;  /* Adjusted height */
+    .button,
+    .requestButton {
+        align-items: center;
+        justify-content: center;
+        width: 480px;
+        height: 90px;
         padding: 0.5rem 1rem;
         font-size: 1rem;
         background-color: #07A6C9;
@@ -31,8 +34,9 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s;
         font-family: 'Andika', sans-serif;
+        transition: background-color 0.3s;
+        margin-left: 14%;
 
         &:hover {
             background-color: #006080;
@@ -42,18 +46,19 @@
 
 .content {
     flex-grow: 1;
-    padding: 1rem;  /* Adjusted padding for mobile */
+    padding: 2rem;
     font-family: 'Andika', sans-serif;
 
     h1 {
-        font-size: 1.6rem;  /* Smaller font size for mobile */
+        font-size: 2rem;
         color: #004e63;
-        margin-bottom: 1.5rem;  /* Reduced margin */
+        margin-bottom: 2rem;
+        text-align: center;
     }
 
     .scheduleGrid {
         display: grid;
-        grid-template-columns: 1fr;  /* Single column for mobile */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
@@ -62,9 +67,10 @@
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
 
         h3 {
-            font-size: 1rem;  /* Adjusted font size */
+            font-size: 1.2rem;
             color: #004e63;
             margin-bottom: 0.5rem;
         }
@@ -76,30 +82,52 @@
     }
 }
 
-.footer {
-    margin-top: 2rem;  /* Added margin for spacing */
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
+// *** Адаптация для экранов до 400px ***
+@media (max-width: 400px) {
     .container {
         flex-direction: column;
+        height: auto;
     }
 
     .sidebar {
-        width: 100%;  /* Full width for sidebar */
+        width: 100%;
+        text-align: center;
         padding: 1rem;
-    }
 
-    .button, .requestButton {
-        width: 100%;  /* Full width for buttons */
+        h2 {
+            font-size: 2rem;
+        }
+
+        .button,
+        .requestButton {
+            width: 90%;
+            height: 70px;
+            font-size: 0.9rem;
+            margin: 0 auto;
+        }
     }
 
     .content {
         padding: 1rem;
-    }
 
-    .scheduleGrid {
-        grid-template-columns: 1fr;  /* One column on mobile */
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .scheduleGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .scheduleItem {
+            padding: 0.8rem;
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
     }
 }

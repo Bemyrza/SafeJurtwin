@@ -293,6 +293,9 @@ span {
     margin-left: 0;
     max-width: 100%;
     padding-right: 0;
+   ul li{
+    text-align: center;
+   }
   }
 
   .registration-image.left img {
@@ -422,7 +425,9 @@ span {
     position: relative;
     max-width: 100%;
   }
-
+  .registration-image.right{
+    transform: translateY(-25%  );
+  }
   .hero-image {
     width: 100%;
     height: auto;

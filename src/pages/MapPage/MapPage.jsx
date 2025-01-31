@@ -26,11 +26,28 @@ const MapPage = () => {
    };
 
    return (
-      <div className={classes.container}>
-         {!routeChanged ? (
-            <div className={classes.sidebar}>
-               <div className={classes.block}>
-                  <label className={classes.radio}>
+      <div>
+         <div className={classes.container}>
+            {!routeChanged ? (
+               <div className={classes.sidebar}>
+                  <div className={classes.block}>
+                     <label className={classes.radio}>
+                        <input type="radio" name="route" />
+                        Откуда
+                     </label>
+                     <label>
+                        <input type="radio" name="route" />
+                        Куда?
+                     </label>
+                     <button className={classes.addRoute}>+ Добавить путь</button>
+                  </div>
+                  <textarea placeholder="Комментарий ребенку..."></textarea>
+                  <button className={classes.changeRoute} onClick={handleRouteChange}>Поменять путь</button>
+               </div>
+            ) : (
+               <div className={classes.newSidebar}>
+                  <div className={classes.labels}>
+                  <label>
                      <input type="radio" name="route" />
                      Откуда
                   </label>
@@ -38,35 +55,22 @@ const MapPage = () => {
                      <input type="radio" name="route" />
                      Куда?
                   </label>
-                  <button className={classes.addRoute}>+ Добавить путь</button>
+                  </div>
+                  <button>Запросить Поменять Путь</button>
+                  <button>Запросить График Дня</button>
+                  <button className={classes.backButton} onClick={handleBack}>Назад</button>
                </div>
-               <textarea placeholder="Комментарий ребенку..."></textarea>
-               <button className={classes.changeRoute} onClick={handleRouteChange}>Поменять путь</button>
-            </div>
-         ) : (
-            <div className={classes.newSidebar}>
-               <div className={classes.labels}>
-                  <label>
-                     <input type="radio" name="route" />
-                     Откуда
-                  </label>
-                  <label>
-                     <input type="radio" name="route" />
-                     Куда?
-                  </label>
-               </div>
-               <button>Запросить Поменять Путь</button>
-               <button>Запросить График Дня</button>
-               <button className={classes.backButton} onClick={handleBack}>Назад</button>
-            </div>
-         )}
-         <iframe
-            title="twogis"
-            frameBorder="no"
-            className={classes.map}
-            src={twoGisIframeURL}
-         ></iframe>
-         <Footer className={classes.footer} />
+            )}
+            <iframe
+               title="twogis"
+               frameBorder="no"
+               className={classes.map}
+               src={twoGisIframeURL}
+            ></iframe>
+         </div>
+         <div className={classes.footer}>
+            <Footer />
+         </div>
       </div>
    );
 };
