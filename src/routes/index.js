@@ -39,7 +39,7 @@ function Layout() {
                 <Route path="/create-account" element={<CreateAccount />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/connection-family" element={<ConnectionFamily />} />
-                <Route path="/role" element={<RoleChoice />} />
+                <Route path="/" element={<RoleChoice />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
         </>
